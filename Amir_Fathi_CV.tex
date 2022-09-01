@@ -1,13 +1,18 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{naturalnames}{hyperref}
+
+\documentclass[11pt,a4paper,sans, nolmodern]{moderncv}
 
 % moderncv themes
 \moderncvstyle{classic} % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{black}                  
+\moderncvcolor{grey}
 
 % Typical packages
+\usepackage[utf8]{inputenc} % replace by the encoding you are using
+\usepackage[T1]{fontenc} % Output font encoding for international characters
 \usepackage{amsmath}
 \usepackage[left=2cm,right=2.5cm,top=3cm,bottom=2.5cm]{geometry}
-\usepackage[utf8]{inputenc} % replace by the encoding you are using
+\recomputelengths
 
 \usepackage[perpage, para, symbol]{footmisc}
 \usepackage[
@@ -24,7 +29,7 @@
   {LyX}}
 
 % personal data
-\name{Amir}{Fathi dul}
+\name{Amir}{Fathi}
 \title{Curriculum\,Vit\ae}
 \mobile{+886 96 3534 132}
 \email{amirfathi@gate.sinica.edu.tw; fathi0amir@gmail.com} % optional, remove the line if not wanted
@@ -59,7 +64,7 @@
 %  Semnan University
 %------------------------------------------
 \cventry{2008--2010}{Master Degree} 
-		{Univesity of Semnan, Semnan, Iran} {} {}{}
+		{Univesity of Semnan, Semnan, Iran}{}{}{}
 %------------------------------------------
 %  Shahid Beheshti
 %------------------------------------------

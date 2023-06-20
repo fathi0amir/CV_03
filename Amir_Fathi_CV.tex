@@ -1,6 +1,3 @@
-\PassOptionsToPackage{unicode}{hyperref}
-\PassOptionsToPackage{naturalnames}{hyperref}
-
 \documentclass[11pt,a4paper, nolmodern]{moderncv}
 
 % moderncv themes
@@ -8,25 +5,21 @@
 \moderncvcolor{blue}
 
 % Typical packages
-\usepackage[utf8]{inputenc} % replace by the encoding you are using
-\usepackage[T1]{fontenc} % Output font encoding for international characters
+%\usepackage[utf8]{inputenc} % replace by the encoding you are using
+%\usepackage[T1]{fontenc} % Output font encoding for international characters
 \usepackage{amsmath}
-\usepackage[left=2cm,right=2cm,top=3cm,bottom=3cm]{geometry}
+% Language related packages
+%\usepackage{kotex}
+\usepackage{xeCJK}
+\usepackage[left=2cm,right=3cm,top=3cm,bottom=3cm]{geometry}
 \recomputelengths
 
 \usepackage[perpage, para, symbol]{footmisc}
 \usepackage[
 	backend=biber,
-	style=nature]{biblatex}
+	style=nature, 
+	maxnames=10]{biblatex}
 \addbibresource{Publication.bib}
-
-% Language related packages
-\usepackage{kotex}
-
-% Costum commands
-\providecommand{\LyX}{\texorpdfstring%
-  {L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
-  {LyX}}
 
 % personal data
 \name{Amir}{Fathi}
@@ -62,7 +55,7 @@
 %  Semnan University
 %------------------------------------------
 \cventry{2008--2010}{Master Degree} 
-		{Department of Physics, Univesity of Semnan, Semnan, Iran}{}{}{}
+		{Department of Physics, University of Semnan, Semnan, Iran}{}{}{}
 %------------------------------------------
 %  Shahid Beheshti
 %------------------------------------------
@@ -74,15 +67,18 @@
 % -----------------------------------		
 \section{Projects \& Research}
 \cvitem{2020--Present}
-		{Study the neural encoding of space in adult zebrafish by a home-built two-photon 
+		{Study the neural encoding of space in adult zebrafish 
+		by a home-built two-photon 
 		imaging technique in a virtual reality system.}
 \cvitem{2017--2020}
-		{Transient absorption images and SEM images collocalization to study charge transfer heterogeneity in photovoltaics}
+		{Transient absorption images and SEM images collocalization 
+		to study charge transfer heterogeneity in photovoltaic}
 \cvitem{2014--2017}
-		{Constructing a pump-probe microscope for nanoparticle tracking applications at Subdiffraction resolution}
+		{Constructing a pump-probe microscope for nanoparticle tracking 
+		applications at Sub-diffraction resolution}
 \cvitem{2017--2018}
 		{Construction of SS-PL system with TE-Cooled PD 
-		and demodulated with lockin amplifier for NIR region as 
+		and demodulated with lock-in amplifier for NIR region as 
 		sensitive as photon counting PMT in visible region}
 \cvitem{2016--2017}
 		{Design, simulation, print, assembly and test 
@@ -97,13 +93,14 @@
 \cvitem{2008--2010}
 		{Simulation, growth and characterization 
 		of single II--IV crystals 
-		by chemical vapor trasnport (CVT) though Chernov bulk diffusion model}
+		by chemical vapor transport (CVT) though Chernov bulk diffusion model}
 %------------------------------------------
 %  Experiences
 %------------------------------------------
 \section{Experiences}
 \cvitem{2020--Present}
-		{Building a two--photon laser scanning microscope integrated with a virtual reality environment 
+		{Building a two--photon laser scanning microscope 
+		integrated with a virtual reality environment 
 		that detects virtual swim events by a torque/force sensor}
 \cvitem{2018--2020}
 		{Handling and operating scanning electron microscope}
@@ -129,7 +126,7 @@
 \cvitem{2020}
 		{Top publication award for ``Label-Free Optical 
 		Microscope Based on a Phase-Modulated Femtosecond 
-		Pump–Probe Approach with Subdiffraction Resolution''}
+		Pump–Probe Approach with Sub-diffraction Resolution''}
 \cvitem{2018}
 		{Top publication award for ``Slow surface 
 		passivation and crystal relaxation with additives to 
@@ -145,7 +142,7 @@
 		{Rewarded Governmental Academic Scholarship 
 		for Bachelor's Degree}
 %------------------------------------------
-% Conference Attanded
+% Conference Attended
 %------------------------------------------
 \section{Conference Attended}
 \cvitem{December, 2018}{\textbf{Annual Meeting of Taiwan Photonics Society}, 
@@ -182,15 +179,15 @@
 					of electronic filters}{Programming scientific data acquisition systems 
 					with photodiod, PMT, APD, EMCCD and iCCD as a detector}
 %------------------------------------------
-%  Laguages
+%  Languages
 %------------------------------------------
 \section{Languages}
 \cvitemwithcomment{Persian}{Native}{}
 \cvitemwithcomment{English}{Fluent; iBT score: 95}{}
-\cvitemwithcomment{Spanish}{Intermediate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . }{Español}
-\cvitemwithcomment{German}{Intermediate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . }{Deutsch}
+\cvitemwithcomment{Spanish}{Intermediate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . }{Español}
+\cvitemwithcomment{German}{Intermediate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . }{Deutsch}
 \cvitemwithcomment{Morse Code}{Intermediate. . . . . . . . . . . . . . . . . . . .}{\bfseries\Large{-\hspace{0.1mm}- -\hspace{0.1mm}-\hspace{0.1mm}- .-. ... . -.-. -\hspace{0.1mm}-\hspace{0.1mm}- -.. .}}
-\cvitemwithcomment{Chinese}{Beginner . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . } {華語}
+\cvitemwithcomment{Chinese}{Beginner . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . } {\normalfont 華語}
 
 \newpage
 \nocite{*} % This will make biber to print all the references as in the bib file regardless of being cited or not

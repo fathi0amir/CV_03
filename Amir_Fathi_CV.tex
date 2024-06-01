@@ -6,27 +6,28 @@
 \sethintscolumnlength{2.8cm}
 
 % Typical packages
-%\usepackage[utf8]{inputenc} % replace by the encoding you are using
-%\usepackage[T1]{fontenc} % Output font encoding for international characters
 \usepackage{amsmath}
-% Language related packages
-%\usepackage{kotex}
 \usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\AtEndPreamble{\setotherlanguage{arabic}}
+\newfontfamily\arabicfont[Script=Arabic]{NotoNaskhArabic-Regular.ttf}
 \usepackage{xeCJK}
 \setCJKmainfont{NotoSansTC-Regular.otf}
 \usepackage[left=1.5cm,right=3cm,top=2.3cm,bottom=2cm]{geometry}
 \recomputelengths
 
+
 \usepackage[perpage, para, symbol]{footmisc}
 \usepackage[
-	backend=biber,
-	style=nature, 
-	maxnames=10,
-	url=false,
-	eprint=false,
-	isbn=false]{biblatex}
-\addbibresource{Publication.bib}
-
+    backend=biber,
+    style=nature, 
+    maxnames=10,
+    url=false,
+    eprint=false,
+    isbn=false]{biblatex}
+    \addbibresource{Publication.bib}
+    
 % personal data
 \name{Amir}{Fathi}
 \title{Curriculum Vit\ae}
@@ -34,22 +35,24 @@
 \email{fathi0amir@gmail.com} % optional, remove the line if not wanted
 \homepage{fathi0amir.github.io} % optional, remove the line if not wanted
 \social[linkedin]{fathi0amir} % optional, remove / comment the line if not wanted
+
 % --------------------------------------
 % Begin here
 % --------------------------------------
 \begin{document}
+
 \makecvtitle
 \vspace{-1.5cm}
 % ---------------------------------------
 % Occupation
 % ---------------------------------------
-\section{Occupation}
+    \section{Occupation}
 \cventry{2023--Present}{Postdoctoral Researcher}
-		{Photonics Research Center, National Tsing Hua University}
-		{Hsinchu, Taiwan}{}{}
+        {Photonics Research Center, National Tsing Hua University}
+        {Hsinchu, Taiwan}{}{}
 \cventry{2020--2023}{Postdoctoral Researcher}
-		{Institute of Molecular Biology, Academia Sinica}
-		{Taipei, Taiwan}{}{}
+        {Institute of Molecular Biology, Academia Sinica}
+        {Taipei, Taiwan}{}{}
 %------------------------------------------
 % Education
 %------------------------------------------
@@ -58,159 +61,69 @@
 % NCTU
 %----------------------------
 \cventry{2013--2020}{Ph.D}
-		{Department of Applied Chemistry, National Chiao
-		Tung University}{Hsinchu, Taiwan}{}{}
+        {Department of Applied Chemistry, National Chiao
+        Tung University}{Hsinchu, Taiwan}{}{}
 %------------------------------------------
 %  Semnan University
 %------------------------------------------
 \cventry{2008--2010}{Master Degree} 
-		{Department of Physics, University of Semnan, Semnan, Iran}{}{}{}
+        {Department of Physics, University of Semnan, Semnan, Iran}{}{}{}
 %------------------------------------------
 %  Shahid Beheshti
 %------------------------------------------
 \cventry{2003--2008}
-		{Bachelors Degree}{Department of Physics, Shahid 
-		Beheshti University, Tehran, Iran}{}{}{}
+        {Bachelors Degree}{Department of Physics, Shahid 
+        Beheshti University, Tehran, Iran}{}{}{}
 % -----------------------------------
 % Projects & Research 
-% -----------------------------------		
-\section{Projects \& Research}
+% -----------------------------------
 
-\cvitem{2023--Present}
-		{Combining an Off-axis microscope with 
-		transient grating PL with sub 80fs time resolution 
-		to study TMD Materials.}
-\cvitem{2020--2023}
-		{Study the neural encoding of space in adult zebrafish 
-		by a home-built two-photon 
-		imaging technique in a virtual reality system.}
-\cvitem{2017--2020}
-		{Transient absorption images and SEM images collocalization 
-		to study charge transfer heterogeneity in photovoltaic}
-\cvitem{2014--2017}
-		{Constructing a pump-probe microscope for nanoparticle tracking 
-		applications at Sub-diffraction resolution}
-\cvitem{2017--2018}
-		{Construction of SS-PL system with TE-Cooled PD 
-		and demodulated with lock-in amplifier for NIR region as 
-		sensitive as photon counting PMT in visible region}
-\cvitem{2016--2017}
-		{Design, simulation, print, assembly and test 
-		of tuned amplifier circuit as a cost effective replacement 
-		of lock-in amplifier}
-\cvitem{2013--2014}
-		{Femtosecond relaxation studies on perovskite solar cells}
-\cvitem{2010--2012}
-		{Rietveld refinement XRD analysis to 
-		Determine Composition Value in ZnS\textsubscript{x}Se\textsubscript{1-x} 
-		Single Crystals grown by CVT}
-\cvitem{2008--2010}
-		{Simulation, growth and characterization 
-		of single II--IV crystals 
-		by chemical vapor transport (CVT) though Chernov bulk diffusion model}
 %------------------------------------------
 %  Experiences
 %------------------------------------------
 \section{Experiences}
-\cvitem{2023--Present}
-		{Programming the PIMAX3 Driver; Building a Off-axis microscope; 
-		Ultrafast Laser Pulse Characterization with FROG}
-\cvitem{2020--2023}
-		{Building a two--photon laser scanning microscope 
-		integrated with a virtual reality environment 
-		that detects virtual swim events by a torque/force sensor}
-\cvitem{2018--2020}
-		{Handling and operating scanning electron microscope}
-\cvitem{2013--2020}
-		{Setting up ultrafast pump-probe laser scanning microscope}
-\cvitem{2013--2020}
-		{Ultrafast laser spectroscopy and microscopy
-	studies in photovoltaic devices }
-\cvitem{2008--2011}
-		{CVT Crystal Growth optimization at University of Semnan}
+\cvitem{2024--Present}{Private Tutoring, Taiwan}
+\cvitem{2014--2019}{Teaching English as a substitute teacher, Taiwan}
+\cvitem{2014--2015}{Teaching English in \textbf{Little Tree Language School}, Taiwan}
+\cvitem{2017--2017}{Teaching English in \textbf{Four Season Language School}, Taiwan}
+\cvitem{2011--2013}{Teaching English in \textbf{Iranmehr Language Institute}, Iran}
+
+\section{Management Responsibilities}
+\cvitem{2023--2024}{Managing master (six) students, NTHU, Taiwan}
+\cvitem{2020--2023}{Managing master (two) students, Academia Sinica, Taiwan}
+\cvitem{2018--2019}{Managing master (four) student, NCTU, Taiwan}
+
+\section{Computer Skills}
+\cvitem{Programming}{Python, MATLAB, Mathematica, C++, R}
+\cvitem{Typesetting}{Office Suite, \LaTeX, Quarto, Pandoc}
 %------------------------------------------
 %  Rewards and Honors
 %------------------------------------------
-\section{Rewards and Honors}
-\cvitem{2021}
-		{``2021 Academia Sinica Postdoctoral 
-		Research Scholars'' for a 2 year funding.}
-\cvitem{2020}
-		{Top publication award for ``A Direct Mapping 
-		Approach to Understand Carrier Relaxation 
-		Dynamics in Varied Regions of a 
-		Polycrystalline Perovskite Film''}
-\cvitem{2020}
-		{Top publication award for ``Label-Free Optical 
-		Microscope Based on a Phase-Modulated Femtosecond 
-		Pump–Probe Approach with Sub-diffraction Resolution''}
-\cvitem{2018}
-		{Top publication award for ``Slow surface 
-		passivation and crystal relaxation with additives to 
-		improve device performance and durability for tin-based 
-		perovskite solar cells''}
-\cvitem{2013--2020}
-		{Rewarded NCTU Scholarship and tuition waver 
-		for during PhD program}
-\cvitem{2008--2010}
-		{Rewarded Governmental Academic Scholarship 
-		for Master's Degree}
-\cvitem{2003--2007}
-		{Rewarded Governmental Academic Scholarship 
-		for Bachelor's Degree}
+
 %------------------------------------------
 % Conference Attended
 %------------------------------------------
-\section{Conference Attended}
-\cvitem{December, 2018}{\textbf{Annual Meeting of Taiwan Photonics Society}, 
-		\newline NCTU (Tainan campus), Taiwan}
-\cvitem{March, 2012}{\textbf{4th International 
-		Conference on Nanostructures (ICNS4)},\newline Kish Island, Iran}
-\cvitem{September, 2010}{\textbf{Annual Physics 
-		Conference of Iran} held by the Physics 
-		Society of Iran, \newline Bu-Ali Sina University, Hamedan, Iran}
-\cvitem{January, 2009}{\textbf {Symposium on 
-		Quantum Computing and Quantum Information Processing and
-		Experimental Aspects of Quantum Computing}, 
-		\newline Shahid Beheshti University (IRI) and Kinki
-		University (JPA)- Tehran, Iran}
+
 %------------------------------------------
 %  Technical Skills
 %------------------------------------------
-\section{Technical Skills}
-	\subsection{Computer}
-	\cvlistdoubleitem{\small \raggedright Programming in MATLAB, LabVIEW,\newline 
-					 R, python, C\# and C++ }
-					{\small \raggedright Typesetting with \TeX\:  \& \LaTeX Engine}
-	\cvlistdoubleitem{\small \raggedright Image Processing in ImageJ, MATLAB}
-					{\small \raggedright XRD data analysis with FullProf Suit}
-	\subsection{Scientific Instruments}
-	\cvlistdoubleitem{\small \raggedright Calibration and maintanance of multi-zone
-					box and tube furnaces}
-					{\small \raggedright Steady state photoluminescence and  
-					UV-Vis measurements}
-	\cvlistdoubleitem{\small \raggedright Construction of femtosecond and nanosecond 
-					transient absorption spectroscopy systems and related measurements}
-					{\small \raggedright Construction of femtosecond pump-probe microscopy and related 
-					image processing}
-	\cvlistdoubleitem{\small \raggedright Design, simulation and fabrication
-					 of electronic filters}
-					 {\small \raggedright Programming scientific data acquisition systems 
-					 with photo-diode, PMT, APD, EMCCD and iCCD as a detector}
+
 %------------------------------------------
 %  Languages
 %------------------------------------------
 \section{Languages}
-\cvitemwithcomment{Persian}{Native}{}
+\cvitemwithcomment{Persian}{Native . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .}{\textarabic{فارسی}}
 \cvitemwithcomment{English}{Fluent {\footnotesize (iBT score: 95)}}{}
-\cvitemwithcomment{Spanish}{Intermediate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .}{Español}
+\cvitemwithcomment{Spanish}{Beginner . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .}{Español}
 \cvitemwithcomment{German}{Intermediate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .}{Deutsch}
 \cvitemwithcomment{Morse Code}{Intermediate. . . . . . . . . . . . . . . . . . . . . . . . . .}{\textbf\Large{-\hspace{0.1mm}- -\hspace{0.1mm}-\hspace{0.1mm}- .-. ... . -.-. -\hspace{0.1mm}-\hspace{0.1mm}- -.. .}}
 \cvitemwithcomment{Chinese}{Beginner . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .} {\normalfont 華語}
+\cvitemwithcomment{Arabic}{Beginner . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .}{\textarabic{اَلْعَرَبِيَّةُ}}
 
-\newpage
-\nocite{*} % This will make biber to print all the references as in the bib file regardless of being cited or not
-\printbibliography[title={Publications}]
+
+% \newpage
+% \nocite{*} % This will make biber to print all the references as in the bib file regardless of being cited or not
+% \printbibliography[title={Publications}]
 \vfill
 %Amir Fathi\\
 \raggedleft

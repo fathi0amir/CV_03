@@ -12,9 +12,12 @@
 % Language related packages
 %\usepackage{kotex}
 \usepackage{fontspec}
+\usepackage[english]{babel}
+\babelprovide[import]{arabic}
+\babelfont[arabic]{rm}{Vazirmatn-Medium.ttf}
 \usepackage{xeCJK}
 \setCJKmainfont{NotoSansTC-Regular.otf}
-\usepackage[left=1.5cm,right=1.8cm,top=2.8cm,bottom=2cm]{geometry}
+\usepackage[left=1.5cm,right=1.8cm,top=3.3cm,bottom=2cm]{geometry}
 \recomputelengths
 
 \usepackage[perpage, para, symbol]{footmisc}
@@ -200,12 +203,13 @@
 					image processing}
 	\cvlistdoubleitem{\small \raggedright Design, simulation and fabrication
 					 of passive/active electronic filters}
-					 {\small \raggedright Certified in handling and operating SEM}
+					 {\small \raggedright Certified in handling and operating 
+					 scanning electron microscope (SEM)}
 %------------------------------------------
 %  Languages
 %------------------------------------------
 \section{Languages}
-\cvitemwithcomment{Persian}{Native}{\hspace{-0.8em}\dotfill Farsi}
+\cvitemwithcomment{Persian}{Native}{\hspace{-0.8em}\dotfill \foreignlanguage{arabic}{پارسی}}
 \cvitemwithcomment{English}{Fluent {\footnotesize (iBT score: 95)}}{}
 \cvitemwithcomment{Spanish}{Intermediate}{\hspace{-0.8em}\dotfill Español}
 \cvitemwithcomment{German}{Intermediate}{\hspace{-0.8em}\dotfill Deutsch}

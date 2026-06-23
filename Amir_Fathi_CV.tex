@@ -2,7 +2,7 @@
 
 % moderncv themes
 \moderncvstyle{classic} % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue}
+\moderncvcolor{black}
 \sethintscolumnlength{2.8cm}
 
 % Typical packages
@@ -12,16 +12,19 @@
 % Language related packages
 %\usepackage{kotex}
 \usepackage{fontspec}
+\usepackage[english]{babel}
+\babelprovide[import]{arabic}
+\babelfont[arabic]{rm}{Vazirmatn-Medium.ttf}
 \usepackage{xeCJK}
 \setCJKmainfont{NotoSansTC-Regular.otf}
-\usepackage[left=1.5cm,right=3cm,top=2.3cm,bottom=2cm]{geometry}
+\usepackage[left=1.5cm,right=1.8cm,top=3.3cm,bottom=2cm]{geometry}
 \recomputelengths
 
 \usepackage[perpage, para, symbol]{footmisc}
 \usepackage[
 	backend=biber,
 	style=nature, 
-	maxnames=10,
+	maxnames=15,
 	url=false,
 	eprint=false,
 	isbn=false]{biblatex}
@@ -44,11 +47,14 @@
 % Occupation
 % ---------------------------------------
 \section{Occupation}
-\cventry{2023--Present}{Postdoctoral Researcher}
-		{Photonics Research Center, National Tsing Hua University}
+\cventry{2024--Present}{Postdoctoral Researcher}
+		{Department of Applied Chemistry, \newline National Yang Ming Chiao Tung University}
+		{Hsinchu, Taiwan}{}{}
+\cventry{2023--2024}{Postdoctoral Researcher}
+		{Photonics Research Center, \newline National Tsing Hua University}
 		{Hsinchu, Taiwan}{}{}
 \cventry{2020--2023}{Postdoctoral Researcher}
-		{Institute of Molecular Biology, Academia Sinica}
+		{Institute of Molecular Biology, \newline Academia Sinica}
 		{Taipei, Taiwan}{}{}
 %------------------------------------------
 % Education
@@ -58,7 +64,7 @@
 % NCTU
 %----------------------------
 \cventry{2013--2020}{Ph.D}
-		{Department of Applied Chemistry, National Chiao
+		{Applied Chemistry Dep., National Chiao
 		Tung University}{Hsinchu, Taiwan}{}{}
 %------------------------------------------
 %  Semnan University
@@ -74,16 +80,21 @@
 % -----------------------------------
 % Projects & Research 
 % -----------------------------------		
-\section{Projects \& Research}
-
-\cvitem{2023--Present}
+\section{Projects}
+\cvitem{2024--Present}
+		{Generating image contrast from tracking trajectories of particles 
+		simulating a bilogical system}
+\cvitem{2024--Present}
+		{Building a interferometric single particle tracking setup 
+		for high speet tracking}
+\cvitem{2023--2024}
 		{Combining an Off-axis microscope with 
 		transient grating PL with sub 80fs time resolution 
-		to study TMD Materials.}
+		to study TMD Materials}
 \cvitem{2020--2023}
 		{Study the neural encoding of space in adult zebrafish 
 		by a home-built two-photon 
-		imaging technique in a virtual reality system.}
+		imaging technique in a virtual reality system}
 \cvitem{2017--2020}
 		{Transient absorption images and SEM images collocalization 
 		to study charge transfer heterogeneity in photovoltaic}
@@ -112,7 +123,13 @@
 %  Experiences
 %------------------------------------------
 \section{Experiences}
-\cvitem{2023--Present}
+\cvitem{2024--Present}
+		{Simulation of normal and anomalous diffusion in biological systems 
+		as in single particle tracking experiments}
+\cvitem{2024--Present}
+		{Programing high-speed imaging for nonblocking 
+		image acquisition}
+\cvitem{2023--2024}
 		{Programming the PIMAX3 Driver; Building a Off-axis microscope; 
 		Ultrafast Laser Pulse Characterization with FROG}
 \cvitem{2020--2023}
@@ -125,7 +142,7 @@
 		{Setting up ultrafast pump-probe laser scanning microscope}
 \cvitem{2013--2020}
 		{Ultrafast laser spectroscopy and microscopy
-	studies in photovoltaic devices }
+	studies in photovoltaic devices}
 \cvitem{2008--2011}
 		{CVT Crystal Growth optimization at University of Semnan}
 %------------------------------------------
@@ -134,7 +151,7 @@
 \section{Rewards and Honors}
 \cvitem{2021}
 		{``2021 Academia Sinica Postdoctoral 
-		Research Scholars'' for a 2 year funding.}
+		Research Scholars'' for a 2 year funding}
 \cvitem{2020}
 		{Top publication award for ``A Direct Mapping 
 		Approach to Understand Carrier Relaxation 
@@ -179,34 +196,39 @@
 %------------------------------------------
 \section{Technical Skills}
 	\subsection{Computer}
-	\cvlistdoubleitem{\small \raggedright Programming in MATLAB, LabVIEW,\newline 
-					 R, python, C\# and C++ }
-					{\small \raggedright Typesetting with \TeX\:  \& \LaTeX Engine}
+	\cvlistitem{\small \raggedright Programming in MATLAB, LabVIEW,
+	R, Python, C\# and C++}
+	\cvlistdoubleitem{\small \raggedright Mesh (3D) modeling with Blender}
+					{\small \raggedright VR development with UE5 \& Panda3D}
+	\cvlistdoubleitem{\small \raggedright CAD with SolidWorks \& 3D  Printing}
+					{\small \raggedright Typesetting with \TeX\:\& Pandoc}
 	\cvlistdoubleitem{\small \raggedright Image Processing in ImageJ, MATLAB}
 					{\small \raggedright XRD data analysis with FullProf Suit}
 	\subsection{Scientific Instruments}
+	\cvlistitem{\small \raggedright Programming scientific DAQs 
+		with PD, PMT, APD, EMCCD and iCCD as detectors}
 	\cvlistdoubleitem{\small \raggedright Calibration and maintanance of multi-zone
 					box and tube furnaces}
 					{\small \raggedright Steady state photoluminescence and  
 					UV-Vis measurements}
-	\cvlistdoubleitem{\small \raggedright Construction of femtosecond and nanosecond 
-					transient absorption spectroscopy systems and related measurements}
+	\cvlistdoubleitem{\small \raggedright Construction of (fs and ns)
+					transient absorption spectroscopy systems}
 					{\small \raggedright Construction of femtosecond pump-probe microscopy and related 
 					image processing}
 	\cvlistdoubleitem{\small \raggedright Design, simulation and fabrication
-					 of electronic filters}
-					 {\small \raggedright Programming scientific data acquisition systems 
-					 with photo-diode, PMT, APD, EMCCD and iCCD as a detector}
+					 of passive/active electronic filters}
+					 {\small \raggedright Certified in handling and operating 
+					 scanning electron microscope (SEM)}
 %------------------------------------------
 %  Languages
 %------------------------------------------
 \section{Languages}
-\cvitemwithcomment{Persian}{Native}{}
+\cvitemwithcomment{Persian}{Native}{\hspace{-0.8em}\dotfill \foreignlanguage{arabic}{پارسی}}
 \cvitemwithcomment{English}{Fluent {\footnotesize (iBT score: 95)}}{}
-\cvitemwithcomment{Spanish}{Intermediate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .}{Español}
-\cvitemwithcomment{German}{Intermediate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .}{Deutsch}
-\cvitemwithcomment{Morse Code}{Intermediate. . . . . . . . . . . . . . . . . . . . . . . . . .}{\textbf\Large{-\hspace{0.1mm}- -\hspace{0.1mm}-\hspace{0.1mm}- .-. ... . -.-. -\hspace{0.1mm}-\hspace{0.1mm}- -.. .}}
-\cvitemwithcomment{Chinese}{Beginner . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .} {\normalfont 華語}
+\cvitemwithcomment{Spanish}{Intermediate}{\hspace{-0.8em}\dotfill Español}
+\cvitemwithcomment{German}{Intermediate}{\hspace{-0.8em}\dotfill Deutsch}
+\cvitemwithcomment{Morse Code}{Intermediate}{\hspace{-0.8em}\dotfill \Large{\textbf{ -\hspace{0.1mm}- -\hspace{0.1mm}-\hspace{0.1mm}- .-. ... . -.-. -\hspace{0.1mm}-\hspace{0.1mm}- -.. .}}}
+\cvitemwithcomment{Chinese}{Beginner}{\hspace{-0.8em}\dotfill \normalfont 華語}
 
 \newpage
 \nocite{*} % This will make biber to print all the references as in the bib file regardless of being cited or not

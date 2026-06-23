@@ -23,5 +23,9 @@
         "Tung",
         "ultrafast",
         "zebrafish"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "minimap.background": "#66555555",
+        "scrollbar.shadow": "#66555555"
+    }
 }

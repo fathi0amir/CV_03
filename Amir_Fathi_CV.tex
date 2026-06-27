@@ -1,20 +1,17 @@
-\RequirePackage[2025-06-01]{latexrelease}
+% \RequirePackage[2025-06-01]{latexrelease}
 \documentclass[11pt,a4paper]{moderncv}
 
 % moderncv themes
-\moderncvstyle{classic} % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{casual} % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}
 \sethintscolumnlength{2.8cm}
 
 % Typical packages
 \usepackage{amsmath}
 \usepackage{fontspec}
-\usepackage{polyglossia}
-\setdefaultlanguage{english}
-\AtEndPreamble{\setotherlanguage{arabic}}
-\newfontfamily\arabicfont[Script=Arabic]{NotoNaskhArabic-Regular.ttf}
 \usepackage{xeCJK}
 \setCJKmainfont{NotoSansTC-Regular.otf}
+\newfontfamily\arabicfont[Script=Arabic]{NotoNaskhArabic-Regular.ttf}
 \usepackage[left=1.5cm,right=3cm,top=2.3cm,bottom=2cm]{geometry}
 \recomputelengths
 
@@ -116,13 +113,13 @@
 %  Languages
 %------------------------------------------
 \section{Languages}
-\cvitemwithcomment{Persian}{Native . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .}{\textarabic{فارسی}}
+\cvitemwithcomment{Persian}{Native . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .}{{\arabicfont فارسی}}
 \cvitemwithcomment{English}{Fluent {\footnotesize (iBT score: 95)}}{}
 \cvitemwithcomment{Spanish}{Beginner . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .}{Español}
 \cvitemwithcomment{German}{Intermediate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .}{Deutsch}
-\cvitemwithcomment{Morse Code}{Intermediate. . . . . . . . . . . . . . . . . . . . . . . . . .}{\textbf\Large{-\hspace{0.1mm}- -\hspace{0.1mm}-\hspace{0.1mm}- .-. ... . -.-. -\hspace{0.1mm}-\hspace{0.1mm}- -.. .}}
+\cvitemwithcomment{Morse Code}{Intermediate. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .}{\textbf\Large{-\hspace{0.1mm}- -\hspace{0.1mm}-\hspace{0.1mm}- .-. ... . -.-. -\hspace{0.1mm}-\hspace{0.1mm}- -.. .}}
 \cvitemwithcomment{Chinese}{Beginner . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .} {\normalfont 中文}
-\cvitemwithcomment{Arabic}{Beginner . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .}{\textarabic{اَلْعَرَبِيَّةُ}}
+\cvitemwithcomment{Arabic}{Beginner . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .}{{\arabicfont اَلْعَرَبِيَّةُ}}
 
 
 % \newpage
